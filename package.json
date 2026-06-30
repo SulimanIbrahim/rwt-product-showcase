@@ -1,0 +1,20 @@
+{
+  "name": "rwt-product-showcase",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "render:nexarena": "node scripts/render-iris-video.mjs --html nexarena.html --out render/nexarena.mp4",
+    "render:nexarena:4k": "node scripts/render-iris-video.mjs --html nexarena.html --width 3840 --height 2160 --out render/nexarena_4k.mp4",
+    "render:nexarena:controls": "node scripts/render-iris-video.mjs --html nexarena.html --show-controls",
+    "render:rotation14": "node scripts/render-iris-video.mjs --html rotation14.html --out render/rotation14.mp4",
+    "render:rotation14:4k": "node scripts/render-iris-video.mjs --html rotation14.html --width 3840 --height 2160 --out render/rotation14_4k.mp4",
+    "render:all": "npm run render:nexarena && npm run render:rotation14",
+    "serve": "python3 -m http.server 8080"
+  },
+  "devDependencies": {
+    "playwright": "^1.60.0"
+  },
+  "dependencies": {
+    "hyperframes": "^0.6.16"
+  }
+}
