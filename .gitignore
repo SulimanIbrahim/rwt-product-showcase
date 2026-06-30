@@ -1,0 +1,4 @@
+node_modules/
+dist/
+.env
+render/iris_frames_1920x1080_30fps_jpg/*

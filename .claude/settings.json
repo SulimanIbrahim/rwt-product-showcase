@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:redwhite.tech)",
+      "Bash(python3 /tmp/build_nexarena.py)",
+      "Bash(node -e ' *)",
+      "Bash(open -a \"Google Chrome\" \"/Users/apple/Desktop/rwt-product-showcase/nexarena.html\")",
+      "Bash(open \"/Users/apple/Desktop/rwt-product-showcase/nexarena.html\")",
+      "Bash(python3 -c ' *)",
+      "Bash(lsof -ti:8080)",
+      "Bash(xargs kill -9)",
+      "Bash(python3 -m http.server 8080)",
+      "Bash(open \"http://localhost:8080/nexarena.html\")",
+      "Bash(cat > *)"
+    ],
+    "additionalDirectories": [
+      "/tmp",
+      "/private/tmp"
+    ]
+  }
+}
